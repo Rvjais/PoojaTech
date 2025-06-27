@@ -62,9 +62,9 @@ const Hero = () => {
 
 All products at PTCS are manufactured using high-grade materials, including mild steel and stainless steel, ensuring durability and performance. Our operations are supported by a skilled and dedicated workforce that drives efficiency and excellence in every aspect of production.
 
-Our manufacturing unit is located in the Mumbai district of Maharashtra and is equipped with advanced machinery to ensure precision and quality. All processes are carried out in-house, allowing us to maintain full control over production timelines and standards.
+Our manufacturing unit is located in Surat, Gujarat, and is equipped with efficient machinery to ensure precision and quality. All processes are carried out in-house, allowing us to maintain full control over production timelines and standards.
 
-As we continue to expand our capabilities, we remain focused on enhancing product quality and streamlining our processes. We take pride in offering high-quality finished products at highly competitive prices and would be honored to become one of your esteemed vendors. We look forward to the opportunity to serve your organization with our reliable and customized solutions.</p>
+As we continue to expand our capabilities, we remain focused on enhancing product quality and streamlining our processes. We take pride in offering high-quality finished products at highly competitive prices and would be honored to become one of your esteemed vendors. We look forward to the opportunity to serve your organization with our reliable and customized solution</p>
         </div></p>
         </div>
         <div className="paradev"><p> We proudly serve a range of organizations, including leading pharmaceutical industries, with whom we have completed several projects and continue to maintain strong, ongoing partnerships.</p>
