@@ -6,40 +6,67 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-    <Element name='contacts'>
- <footer className="footer">
-      <div className="footer-content">
-        <h3>POOJA TECH</h3>
-        <p className="tagline">Complete Solutions for Pharmaceutical & Industrial Needs</p>
+      <Element name='contacts'>
+        <footer className="footer">
+          <div className="footer-content">
+            <h3>POOJA TECH</h3>
+            <p className="tagline">Complete Solutions for Pharmaceutical & Industrial Needs</p>
 
-        <div className="footer-info">
-          <div className="footer-item">
-            <FaPhoneAlt className="footer-icon" />
-            <span>+91-9876543210</span>
+            <div className="footer-info">
+              <div className="numbers">
+                <div className="footer-item">
+                  <FaPhoneAlt className="footer-icon" />
+                  <a href="tel:+7021336079"><span>+91-7021336079,</span></a>
+                </div>
+                <div className="footer-item">
+                  <FaPhoneAlt className="footer-icon" />
+                  <a href="tel:+919833353433"><span>+91-9833353433</span></a>
+                </div>
+              </div>
+
+
+              <div className="footer-item">
+                <FaEnvelope className="footer-icon" />
+                <a href="mailto:deepakumarpandey71@gmail.com"><span>E-mail(Proprietor)</span></a>
+                <FaEnvelope className="footer-icon" />
+                <a href="mailto:poojatechcompletesolutions@gmail.com"><span>E-mail(Production-In-charge)</span></a>
+              </div>
+
+              <div className="footer-item">
+                <FaMapMarkerAlt className="footer-icon" />
+                <a href="https://www.google.com/maps/place/Sakharam+Nagar+Complex/@19.2167538,73.0758371,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7be22fa448213:0x1ec93e37c5b5c622!8m2!3d19.2167538!4d73.078412!16s%2Fg%2F11cn0pz2c2?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D">
+                  <span>Registered Office ,
+                    Dombivli-west,Mumbai
+                    421202 (Click to go to Location)</span>
+                </a>
+              </div>
+              <div className="footer-item">
+                <FaMapMarkerAlt className="footer-icon" />
+                <a href="https://www.google.com/maps/place/14%2FA,+Samrat+Mill+Compound,+Godrej+%26+Boyce+Industry+Estate,+Vikhroli+West,+Mumbai,+Maharashtra+400079/@19.1063776,72.9218284,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c7b8ce9b0327:0x2a64bb7cadfe6273!8m2!3d19.1063776!4d72.9244033!16s%2Fg%2F11vkjpm8_3?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D">
+                  <span>Workshop,Vikhroli west,
+                    Mumbai- 400079(Click to go to Location)</span>
+                </a>
+              </div>
+              <div className="footer-item">
+                <FaMapMarkerAlt className="footer-icon" />
+                <a href="https://www.google.com/maps/place/Vrundavan/@21.1013284,73.0335233,17z/data=!3m1!4b1!4m6!3m5!1s0x3be05d0021673ddf:0x736167174d6adf02!8m2!3d21.1013284!4d73.0360982!16s%2Fg%2F11w1vkfmqs?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D">
+                  <span> Office,Surat,
+                    394310 (Click to go to Location)</span>
+                </a>
+              </div>
+            </div>
+
+            <p className="copyright">
+              © {new Date().getFullYear()} Pooja Tech. All rights reserved.
+            </p>
           </div>
+        </footer>
 
-          <div className="footer-item">
-            <FaEnvelope className="footer-icon" />
-            <span>contact@poojatech.in</span>
-          </div>
+      </Element>
 
-          <div className="footer-item">
-            <FaMapMarkerAlt className="footer-icon" />
-            <span>Plot No. 123, Industrial Area, Sikkim, India</span>
-          </div>
-        </div>
 
-        <p className="copyright">
-          © {new Date().getFullYear()} Pooja Tech. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    </Element>
-    
-    
     </>
-   
+
   );
 };
 

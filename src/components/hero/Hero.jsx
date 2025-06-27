@@ -97,7 +97,7 @@ const Hero = () => {
           <img className='hospaccess' src={storage10} alt="" />
         </div>
         <h3 className="headingtop">
-          Storage Units
+          Trollys
         </h3>
         <div className="trollypics">
           <img src={trolly1} alt="" className="trollypic" />

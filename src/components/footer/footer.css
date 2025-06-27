@@ -51,7 +51,10 @@
   font-size: 0.85rem;
   color: #dcdcdc;
 }
-
+.numbers{
+  display: flex;
+  flex-direction: row;
+}
 /* Responsive */
 @media (max-width: 600px) {
   .footer {
