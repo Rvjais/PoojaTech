@@ -10,10 +10,18 @@ const Navbar = () => {
           <br />
           <span className='logo2'>complete solution</span>
         </div>
-       <Link className='linktags' to="hero">Home</Link>
-       <Link  className='linktags' to="about">About</Link>
-       <Link className='linktags' to="services">Services</Link>
-       <Link className='linktags' to="contacts">Contacts</Link>
+       <Link   smooth={true} 
+        duration={500}
+        offset={-70} className='linktags' to="hero">Home</Link>
+       <Link   smooth={true} 
+        duration={500}
+        offset={-70}  className='linktags' to="about">About</Link>
+       <Link   smooth={true} 
+        duration={500}
+        offset={-70} className='linktags' to="services">Services</Link>
+       <Link   smooth={true} 
+        duration={500}
+        offset={-70} className='linktags' to="contacts">Contacts</Link>
       </div>
     </>
   )

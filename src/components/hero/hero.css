@@ -23,6 +23,18 @@
   flex-wrap: wrap;
 }
 
+.headingdiv {
+  box-shadow: var(--glass-shadow);
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  width: 30vw;
+  justify-self: center;
+  margin-top: 20px;
+
+}
+
 .product {
   width: 45%;
   display: flex;
@@ -94,8 +106,7 @@
 
 .paradev {
   width: 70%;
-
-  margin: 0 auto;
+  margin: 10px auto;
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
   border-radius: 16px;

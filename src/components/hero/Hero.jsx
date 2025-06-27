@@ -52,10 +52,21 @@ const Hero = () => {
         </div>
       </Element>
       <Element name='about'>
-
-        <h1 className="headingtop">
+        <div className="headingdiv">
+          <h1 className="headingtop">
           ABOUT US
         </h1>
+        </div>
+
+        <div className="paradev"><p> <div className="paradev"><p> Pooja Tech Complete Solutions is committed to establishing a world-class manufacturing facility that consistently delivers superior quality products to our clients. In alignment with this mission, we specialize in providing customized solutions tailored to the specific requirements of each customer.
+
+All products at PTCS are manufactured using high-grade materials, including mild steel and stainless steel, ensuring durability and performance. Our operations are supported by a skilled and dedicated workforce that drives efficiency and excellence in every aspect of production.
+
+Our manufacturing unit is located in the Mumbai district of Maharashtra and is equipped with advanced machinery to ensure precision and quality. All processes are carried out in-house, allowing us to maintain full control over production timelines and standards.
+
+As we continue to expand our capabilities, we remain focused on enhancing product quality and streamlining our processes. We take pride in offering high-quality finished products at highly competitive prices and would be honored to become one of your esteemed vendors. We look forward to the opportunity to serve your organization with our reliable and customized solutions.</p>
+        </div></p>
+        </div>
         <div className="paradev"><p> We proudly serve a range of organizations, including leading pharmaceutical industries, with whom we have completed several projects and continue to maintain strong, ongoing partnerships.</p>
         </div>
 
@@ -78,9 +89,11 @@ const Hero = () => {
 
       {/* services  */}
       <Element name='services' >
-        <h1 className="headingtop">
+       <div className="headingdiv">
+          <h1 className="headingtop">
           SERVICES
         </h1>
+        </div>
         <h2>Hospital Accesories</h2>
         <h3 className="headingtop">
           Storage Units
