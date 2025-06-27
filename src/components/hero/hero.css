@@ -1,21 +1,32 @@
-/* hero.css */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  --accent-color: #00ffe5;
+  --text-main: #151313;
+  --text-secondary: #ccc;
+}
 
+/* General reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Top container */
 .topContainer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
-  animation: fadeIn 1s ease-in;
-  flex-wrap: wrap; /* for responsiveness */
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .product {
   width: 45%;
   display: flex;
   justify-content: center;
-  animation: slideInRight 1.2s ease;
 }
 
 .productimg {
@@ -23,6 +34,7 @@
   max-width: 100%;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  box-shadow: var(--glass-shadow);
 }
 
 .productimg:hover {
@@ -31,13 +43,19 @@
 
 .textcontainer {
   width: 45%;
-  animation: slideInLeft 1.2s ease;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .textcontainer h3 {
   font-size: 1.5rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-main);
   text-align: justify;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,53 +66,149 @@
   display: flex;
   justify-content: center;
   padding: 2rem 1rem;
-  background-color: #f4f4f4;
-  animation: fadeIn 1.5s ease-in;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .topbottomtext {
   width: 60%;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #222;
+  color: var(--text-main);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* About Section */
+.headingtop {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 2rem 0;
+  color: var(--text-main);
 }
 
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.paradev {
+  width: 70%;
+  margin: 0 auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: var(--glass-shadow);
+  border: 1px solid var(--glass-border);
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.paradev p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Organization images */
+.imgcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.orgimg {
+  height: 200px;
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: var(--glass-shadow);
+}
+
+/* Services Section */
+.hospaccess,
+.trollypic {
+  height: 300px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: var(--glass-shadow);
+  transition: transform 0.3s ease;
+}
+
+.hospaccess:hover,
+.trollypic:hover {
+  transform: scale(1.03);
+}
+
+.storageunitbox,
+.trollypics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  margin: 2rem;
+  border: 1px solid var(--glass-border);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-main);
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: var(--glass-shadow);
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.footer-icon {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+.footer-content p {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 
 /* Responsive */
@@ -106,7 +220,8 @@
 
   .product,
   .textcontainer,
-  .topbottomtext {
+  .topbottomtext,
+  .paradev {
     width: 90%;
   }
 
@@ -114,19 +229,8 @@
     height: auto;
     max-height: 300px;
   }
-}
 
-
-/* ABOUT CSS*/
-.headingtop{
-    justify-self: center;
-}
-.paradev{
-    width: 70%;
-    justify-self: center;
-}
-p {
-    justify-self: center;
-    text-align: center;
-    scale: 1.3;
+  .headingtop {
+    font-size: 1.6rem;
+  }
 }
