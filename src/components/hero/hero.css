@@ -4,7 +4,7 @@
   --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   --accent-color: #00ffe5;
   --text-main: #151313;
-  --text-secondary: #ccc;
+  --text-secondary: #5a5555;
 }
 
 /* General reset */
@@ -94,6 +94,7 @@
 
 .paradev {
   width: 70%;
+
   margin: 0 auto;
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
