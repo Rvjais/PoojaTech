@@ -1,6 +1,7 @@
 import React from 'react'
 import { Element } from 'react-scroll';
 import '../hero/hero.css'
+import '../hero/media.css'
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import herotop from '../../assets/My Products-1-001/My Products/herotop.png'
 
@@ -41,7 +42,7 @@ const Hero = () => {
             <img className='productimg' src={herotop} alt="" />
           </div>
           <div className="textcontainer">
-            <h3 >We take pride in offering high-quality finished products at highly competitive prices. We would be honored to become one of your esteemed vendors and look forward to the opportunity to supply our products to your organization.</h3>
+            <h4 >We take pride in offering high-quality finished products at highly competitive prices. We would be honored to become one of your esteemed vendors and look forward to the opportunity to supply our products to your organization.</h4>
           </div>
 
         </div>
@@ -58,7 +59,7 @@ const Hero = () => {
         </h1>
         </div>
 
-        <div className="paradev"><p> <div className="paradev"><p> Pooja Tech Complete Solutions is committed to establishing a world-class manufacturing facility that consistently delivers superior quality products to our clients. In alignment with this mission, we specialize in providing customized solutions tailored to the specific requirements of each customer.
+        <div className="paradev"><p><div className="paradev"><p> Pooja Tech Complete Solutions is committed to establishing a world-class manufacturing facility that consistently delivers superior quality products to our clients. In alignment with this mission, we specialize in providing customized solutions tailored to the specific requirements of each customer.
 
 All products at PTCS are manufactured using high-grade materials, including mild steel and stainless steel, ensuring durability and performance. Our operations are supported by a skilled and dedicated workforce that drives efficiency and excellence in every aspect of production.
 
@@ -79,9 +80,6 @@ As we continue to expand our capabilities, we remain focused on enhancing produc
           <img className='orgimg' src={org5} alt="" />
           <img className='orgimg' src={org6} alt="" />
           <img className='orgimg' src={org7} alt="" />
-
-
-
         </div>
 
       </Element>

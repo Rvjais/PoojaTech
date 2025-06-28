@@ -223,26 +223,3 @@
   color: var(--text-secondary);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .topContainer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .product,
-  .textcontainer,
-  .topbottomtext,
-  .paradev {
-    width: 90%;
-  }
-
-  .productimg {
-    height: auto;
-    max-height: 300px;
-  }
-
-  .headingtop {
-    font-size: 1.6rem;
-  }
-}

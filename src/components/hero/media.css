@@ -1,0 +1,49 @@
+@media (max-width: 430px) {
+  .topContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+.headingdiv{
+    width: 40vw;
+    height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 15px;
+}
+  .product,
+  .textcontainer,
+  .topbottomtext,
+  .paradev {
+    width: 90%;
+  }
+  .paradev p{
+    font-size: 15px;
+  }
+
+  .productimg {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .headingtop {
+    font-size: 1.6rem;
+  }
+   .storageunitbox , .trollypics{
+   display: flex;
+   flex-wrap: wrap;
+
+  }
+  .imgcontainer {
+    height: 50vh;
+    overflow-y: scroll;
+  }
+  .trollypic, .hospaccess {
+height: 150px;
+width: 130px;
+gap: none;
+padding: none;
+margin: 5px;
+background-size: cover;
+  }
+}
