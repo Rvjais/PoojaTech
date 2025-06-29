@@ -1,0 +1,8 @@
+@media (max-width: 390px) {
+  .logo2{
+    display: none;
+  }
+  .linktags{
+    font-size: 10px;
+  }
+  }
