@@ -1,8 +1,28 @@
 @media (max-width: 390px) {
+    .logo span{
+       font-size: 15px;
+       margin-right: 5px;
+    }
   .logo2{
     display: none;
   }
   .linktags{
     font-size: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  }
+  @media (max-width: 430px) {
+    .logo span{
+       font-size: 15px;
+       margin-right: 5px;
+    }
+  .logo2{
+    display: none;
+  }
+  .linktags{
+    font-size: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   }
