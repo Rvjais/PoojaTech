@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import '../hero/hero.css'
 import '../hero/media.css'
 import herotop from '../../assets/My Products-1-001/My Products/herotop.png'
-import {storageImages , trollyImages} from '../../ImageData'
+import {storageImages , trollyImages, basinImages } from '../../ImageData'
 // organisation pictures
 
 import org1 from '../../assets/organisation/domhup.webp'
@@ -15,23 +15,7 @@ import org5 from '../../assets/organisation/lubrizole.png'
 import org6 from '../../assets/organisation/mspl.jpeg'
 import org7 from '../../assets/organisation/Pharma-Industry-scaled.jpg'
 
-// // storage unit images
-// import storage1 from '../../assets/My Products-1-001/My Products/storage1.jpg'
-// import storage2 from '../../assets/My Products-1-001/My Products/storage2.jpg'
-// import storage4 from '../../assets/My Products-1-001/My Products/storage4.jpg'
-// import storage5 from '../../assets/My Products-1-001/My Products/storage5.jpg'
-// import storage6 from '../../assets/My Products-1-001/My Products/storage6.jpg'
-// import storage7 from '../../assets/My Products-1-001/My Products/storage7.jpg'
-// import storage8 from '../../assets/My Products-1-001/My Products/storage8.jpg'
-// import storage9 from '../../assets/My Products-1-001/My Products/storage9.jpg'
-// import storage10 from '../../assets/My Products-1-001/My Products/storage10.jpg'
 
-// // trolly images
-// import trolly1 from '../../assets/My Products-1-001/My Products/trolly1.jpeg'
-// import trolly2 from '../../assets/My Products-1-001/My Products/trolly2.jpg'
-// import trolly3 from '../../assets/My Products-1-001/My Products/trolly3.jpg'
-// import trolly4 from '../../assets/My Products-1-001/My Products/trolly4.webp'
-// import trolly5 from '../../assets/My Products-1-001/My Products/trolly5.webp'
 const Hero = () => {
 
 
@@ -113,6 +97,16 @@ As we continue to expand our capabilities, we remain focused on enhancing produc
             </Link>
           ))}
         </div>
+        <h3 className="headingtop">Sink And Basins</h3>
+        <div className="trollypics">
+          {/* Map over trollyImages to create clickable links */}
+          {basinImages.map((image) => (
+            <Link key={image.id} to={`/products/basin/${image.id}`}>
+              <img className="trollypic" src={image.src} alt={image.alt} />
+            </Link>
+          ))}
+        </div>
+
       </Element>
      
     </>

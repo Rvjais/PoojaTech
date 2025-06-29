@@ -18,6 +18,65 @@ import trolly3 from './assets/My Products-1-001/My Products/trolly3.jpg';
 import trolly4 from './assets/My Products-1-001/My Products/trolly4.webp';
 import trolly5 from './assets/My Products-1-001/My Products/trolly5.webp';
 
+//Import all Basin images
+import basin1 from './assets/My Products-1-001/My Products/basin1.png'
+import basin2 from './assets/My Products-1-001/My Products/basin2.png'
+import basin3 from './assets/My Products-1-001/My Products/basin3.jpg'
+import basin4 from './assets/My Products-1-001/My Products/basin4.jpg'
+import basin5 from './assets/My Products-1-001/My Products/basin5.jpg'
+import basin6 from './assets/My Products-1-001/My Products/basin7.jpeg'
+import basin7 from './assets/My Products-1-001/My Products/basin7.jpg'
+import basin8 from './assets/My Products-1-001/My Products/basin8.jpeg'
+import basin9 from './assets/My Products-1-001/My Products/basin9.jpeg'
+// import basin10 from './assets/My Products-1-001/My Products/basin10.png'
+
+export const basinImages = [{
+    id: 'Sink-1',
+    src: basin1,
+    alt: 'sink 1',
+    description: 'nkwendkewn dwojdowejdoiiodom saomdamdokowejo dojweojfowjkokdpw epkdpwekfpjwpejdpw kpo onmocnpn ojpjwoqjdoh iqwihihewhdwho wjeojwoejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-2',
+    src: basin2,
+    alt: 'sink 2',
+    description: 'nkwendkewnd wojdowejdoiiodomsa  omdamdok owejodojweojfowjko kdpwepkdpwekfpjwpejdpwkpo onmocnpn ojpjwoqjdoh iqwihihe  whdwhowjeojwoejf wojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-3',
+    src: basin3,
+    alt: 'sink 3',
+    description: 'nkwendkewndwojdowejdoiiodomsaomda mdokowejodojwe ojfowjkokdpwepkdpw ekfpjwpejdpwkpo onmocnpn ojpjwoqjdohiqwihih  ewhdwho wjeojwoejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-4',
+    src: basin4,
+    alt: 'sink 4',
+    description: 'nkwendkew ndwojdowejdoi iodomsaomdamd okowejodojweojfowjkokdp wepkdpwekfpjwpejdpwkpo onmocnpn ojpjwoqjdohiqwihihew hdwhowjeojwo ejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-5',
+    src: basin5,
+    alt: 'sink 5',
+    description: 'nkwendkewndwojdowe jdoiiodomsaomda mdokowejodojweojfowjk okdpwepkdpwekfpjwp ejdpwkpo onmocnpn ojpjwoqjdohiqwihi hewhdwhowjeojwoejfwo jfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-6',
+    src: basin6,
+    alt: 'sink 6',
+    description: 'nkwendkewndwojdowej doiiodomsaomdamdo kowejodojweojfowj kokdpwepkdpwek fpjwpejdpwkpo onmocnpn ojpjwoqjdohiqwi hihewhdwhowjeojw oejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-7',
+    src: basin7,
+    alt: 'sink 7',
+    description: 'nkwendkewndwoj dowejdoiiodomsaom damdokowejodojweo jfowjkokdpwepkdpwe kfpjwpejdpwkpo onmocnpn ojpjwoqjdohiqwihihewhdwhowjeojwoejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-8',
+    src: basin8,
+    alt: 'sink 8',
+    description: 'nkwendkewn dwojdowejdoiio domsaomdamdokowej odojweojfowjkokdp wepkdpwekfpj wpejdpwkpo onmocnpn ojpjwoqjdoh iqwihihewhdwhowj eojwoej fwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.'
+},{
+    id: 'Sink-9',
+    src: basin9,
+    alt: 'sink 9',
+    description: 'nkwendkewndwojdowejdoi iodomsaomd amdokowejod ojweojfowjk okdpwepkd pwekfpjwpej dpwkpo onmocnpn ojpjwoqjdo hiqwihihe  whdwhowjeojwo ejfwojfwioop  jwo djwjowjow weojwj fowjfowjj owjod.' 
+},];
+
 export const storageImages = [
   {
     id: 'storage-unit-1',
@@ -75,6 +134,8 @@ export const storageImages = [
   },
 ];
 
+
+
 export const trollyImages = [
   {
     id: 'medical-trolly-1',
@@ -109,4 +170,4 @@ export const trollyImages = [
 ];
 
 // Export all image data for easier import in other components
-export const allProducts = [...storageImages, ...trollyImages];
+export const allProducts = [...storageImages, ...trollyImages, ...basinImages];
