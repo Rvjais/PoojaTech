@@ -2,7 +2,6 @@ import React from 'react'
 import { Element } from 'react-scroll';
 import '../hero/hero.css'
 import '../hero/media.css'
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import herotop from '../../assets/My Products-1-001/My Products/herotop.png'
 
 // organisation pictures
