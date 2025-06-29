@@ -32,6 +32,7 @@
   width: 30vw;
   justify-self: center;
   margin-top: 20px;
+  border-radius: 20px;
 
 }
 
@@ -97,6 +98,7 @@
 }
 
 /* About Section */
+/*  */
 .headingtop {
   text-align: center;
   font-size: 2.2rem;
