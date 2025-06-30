@@ -1,10 +1,31 @@
+/* hero.css */
+
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  --accent-color: #00ffe5;
-  --text-main: #151313;
-  --text-secondary: #5a5555;
+  /* New base colors for a more vibrant, cohesive theme */
+  --primary-hue: 200; /* A cool blue hue for the overall theme */
+  --secondary-hue: 150; /* A green/teal hue for accents */
+
+  /* Glassmorphism elements - now with a subtle blue tint */
+  --glass-bg: hsla(var(--primary-hue), 30%, 90%, 0.15); /* Lighter blue tint, more opaque */
+  --glass-border: hsla(var(--primary-hue), 40%, 80%, 0.3); /* Stronger blue tint for border */
+  --glass-shadow: 0 6px 40px rgba(0, 0, 0, 0.25); /* Slightly more pronounced shadow */
+
+  /* Text colors - now richer and more readable */
+  --text-main: hsl(var(--primary-hue), 40%, 20%); /* Dark, deep blue */
+  --text-secondary: hsl(var(--primary-hue), 20%, 45%); /* Muted blue-grey */
+
+  /* Accent color - remains bright teal, possibly used more visually */
+  --accent-color: #00ffe5; /* Original bright teal */
+  --accent-light: hsla(var(--secondary-hue), 100%, 70%, 0.8); /* Lighter accent for subtle glows */
+}
+
+/* Overall body background to set the theme */
+body {
+  background: linear-gradient(135deg, hsl(var(--primary-hue), 80%, 95%) 0%, hsl(var(--primary-hue), 60%, 90%) 100%);
+  min-height: 100vh; /* Ensure it covers the full height */
+  margin: 0; /* Remove default body margin */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Ensuring consistent font */
+  color: var(--text-main); /* Apply main text color globally */
 }
 
 /* General reset */
@@ -33,7 +54,7 @@
   justify-self: center;
   margin-top: 20px;
   border-radius: 20px;
-
+  padding: 1rem 0; /* Added padding for better visual balance */
 }
 
 .product {
@@ -48,10 +69,14 @@
   border-radius: 12px;
   transition: transform 0.3s ease;
   box-shadow: var(--glass-shadow);
+  /* Added a subtle border with accent color */
+  border: 2px solid var(--accent-light);
 }
 
 .productimg:hover {
   transform: scale(1.05);
+  /* Enhanced shadow on hover */
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.35), 0 0 20px var(--accent-color);
 }
 
 .textcontainer {
@@ -65,10 +90,10 @@
   box-shadow: var(--glass-shadow);
 }
 
-.textcontainer h3 {
+.textcontainer h4 { /* Changed to h4 as per your Hero.js, not h3 */
   font-size: 1.5rem;
   line-height: 1.6;
-  color: var(--text-main);
+  color: var(--text-main); /* Uses new text-main */
   text-align: justify;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,26 +109,35 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
+  margin-top: 2rem; /* Added margin for separation */
 }
 
 .topbottomtext {
   width: 60%;
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--text-main);
+  color: var(--text-main); /* Uses new text-main */
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
+  /* Add a subtle text shadow for better readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section */
-/*  */
 .headingtop {
   text-align: center;
   font-size: 2.2rem;
   margin: 2rem 0;
-  color: var(--text-main);
+  color: var(--text-main); /* Uses new text-main */
+  /* Optional: Make heading more vibrant with a subtle gradient */
+  background: linear-gradient(90deg, hsl(var(--primary-hue), 70%, 40%) 0%, hsl(var(--secondary-hue), 70%, 50%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Fallback for browsers that don't support background-clip */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* More prominent text shadow */
 }
 
 .paradev {
@@ -120,7 +154,7 @@
 .paradev p {
   text-align: center;
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Uses new text-secondary */
   font-weight: 500;
 }
 
@@ -139,6 +173,8 @@
   border-radius: 12px;
   object-fit: cover;
   box-shadow: var(--glass-shadow);
+  /* Added a subtle border */
+  border: 1px solid var(--glass-border);
 }
 
 /* Services Section */
@@ -149,11 +185,16 @@
   border-radius: 12px;
   box-shadow: var(--glass-shadow);
   transition: transform 0.3s ease;
+  /* Added a border with accent color for pop */
+  border: 2px solid var(--accent-light);
+  cursor: pointer; /* Indicate clickability */
 }
 
 .hospaccess:hover,
 .trollypic:hover {
   transform: scale(1.03);
+  /* Enhanced shadow on hover for interactive feel */
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3), 0 0 15px var(--accent-color);
 }
 
 .storageunitbox,
@@ -180,7 +221,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--glass-border);
-  color: var(--text-main);
+  color: var(--text-main); /* Uses new text-main */
   text-align: center;
   border-radius: 16px 16px 0 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -190,11 +231,12 @@
 .footer-content h3 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: var(--text-main); /* Ensure consistency with new text-main */
 }
 
 .tagline {
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Uses new text-secondary */
   margin-bottom: 1rem;
 }
 
@@ -211,17 +253,16 @@
   align-items: center;
   gap: 0.6rem;
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Uses new text-secondary */
 }
 
 .footer-icon {
   font-size: 1.1rem;
-  color: var(--accent-color);
+  color: var(--accent-color); /* Keeps original accent color */
 }
 
 .footer-content p {
   margin-top: 1rem;
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-secondary); /* Uses new text-secondary */
 }
-

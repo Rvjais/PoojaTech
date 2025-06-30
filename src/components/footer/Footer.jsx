@@ -2,7 +2,7 @@ import React from 'react';
 import '../footer/footer.css';
 import { Element } from 'react-scroll';
 import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-
+import doc from '../../assets/pooja tech.pdf'
 const Footer = () => {
   return (
     <>
@@ -46,6 +46,12 @@ const Footer = () => {
             <p className="copyright">
               © {new Date().getFullYear()} Pooja Tech. All rights reserved.
             </p>
+          </div>
+          <div className="pdf">
+            <p>visit our documentation</p>
+            <button className='document'>
+              <a href={doc} download='Pooja tech'>Pooja Tech</a>
+            </button>
           </div>
         </footer>
 

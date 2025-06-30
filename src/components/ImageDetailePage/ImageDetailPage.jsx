@@ -17,7 +17,7 @@ const ImageDetailPage = () => {
       <div style={{ padding: '20px', textAlign: 'center' }}>
         <h2>Product Not Found</h2>
         <p>The product you are looking for does not exist.</p>
-        <button onClick={() => navigate('/')} style={{ padding: '10px 20px', cursor: 'pointer' }}>
+        <button onClick={() => navigate('/PoojaTech')} style={{ padding: '10px 20px', cursor: 'pointer' }}>
           Back to Home
         </button>
       </div>
