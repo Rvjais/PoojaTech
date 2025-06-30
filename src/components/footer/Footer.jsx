@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
 
 
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/917021336079" target="_blank" rel="noopener noreferrer">
                   <FaWhatsapp className="footer-icon" />
                   <span>WhatsApp (Sales Support)</span>
                 </a>
