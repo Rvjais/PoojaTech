@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../hero/hero.css";
 import "../hero/media.css";
 import herotop from "../../assets/My Products-1-001/My Products/herotop.png";
-import { storageImages, trollyImages, basinImages } from "../../ImageData";
+import { storageImages, trollyImages, basinImages, acImages } from "../../ImageData";
 // organisation pictures
 
 import org1 from "../../assets/organisation/domhup.webp";
@@ -124,14 +124,15 @@ const Hero = () => {
               <img className="trollypic" src={image.src} alt={image.alt} />
             </Link>
           ))}
-        </div>
-        <div className="hospitalservice">
-          <h1>Autoclaves and sterlization</h1>
-        </div>
+        </div>   
         <h3 className="headingtop">Autoclaves</h3>
-        <div className="autoclavespic">
+        <div className="trollypics">
           {/* map over autoclave images  */}
-          
+          {acImages.map((image) => (
+            <Link key={image.id} to={`/product/autoclave/${image.id}`}>
+              <img className="trollypic" src={image.src} alt={image.alt} />
+            </Link>
+          ))}
         </div>
       </Element>
     </>

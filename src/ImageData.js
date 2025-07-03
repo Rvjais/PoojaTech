@@ -30,6 +30,7 @@ import basin8 from './assets/My Products-1-001/My Products/basin8.jpeg'
 import basin9 from './assets/My Products-1-001/My Products/basin9.jpeg'
 // import basin10 from './assets/My Products-1-001/My Products/basin10.png'
 import ac1 from './assets/My Products-1-001/My Products/ac1.jpg'
+import ac2 from './assets/My Products-1-001/My Products/ac2.png'
 export const basinImages = [{
     id: 'Sink-1',
     src: basin1,
@@ -134,12 +135,19 @@ export const storageImages = [
   },
 ];
 
-export const acTmages = [ {
+export const acImages = [ {
   id: 'ac1',
   src: ac1,
-  alt: " Rectangular Autoclave"
-  description: ""
-}]
+  alt: 'Rectangular Autoclave',
+  description: "HPVC fully Automatic Autoclave Strelizer",
+
+},
+{
+   id: 'ac2',
+  src: ac2,
+  alt: " Rectangular Autoclave 2",
+  description: "HPVC fully Automatic Autoclave Strelizer",
+},];
 
 export const trollyImages = [
   {
@@ -175,4 +183,4 @@ export const trollyImages = [
 ];
 
 // Export all image data for easier import in other components
-export const allProducts = [...storageImages, ...trollyImages, ...basinImages];
+export const allProducts = [...storageImages, ...trollyImages, ...basinImages, ...acImages];
