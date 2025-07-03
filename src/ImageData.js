@@ -29,7 +29,7 @@ import basin7 from './assets/My Products-1-001/My Products/basin7.jpg'
 import basin8 from './assets/My Products-1-001/My Products/basin8.jpeg'
 import basin9 from './assets/My Products-1-001/My Products/basin9.jpeg'
 // import basin10 from './assets/My Products-1-001/My Products/basin10.png'
-
+import ac1 from './assets/My Products-1-001/My Products/ac1.jpg'
 export const basinImages = [{
     id: 'Sink-1',
     src: basin1,
@@ -134,7 +134,12 @@ export const storageImages = [
   },
 ];
 
-
+export const acTmages = [ {
+  id: 'ac1',
+  src: ac1,
+  alt: " Rectangular Autoclave"
+  description: ""
+}]
 
 export const trollyImages = [
   {

@@ -92,11 +92,12 @@ body {
 
 .textcontainer h4 { /* Changed to h4 as per your Hero.js, not h3 */
   font-size: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.2;
   color: var(--text-main); /* Uses new text-main */
   text-align: justify;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: normal;
 }
 
 /* Bottom Section */
@@ -265,4 +266,10 @@ body {
   margin-top: 1rem;
   font-size: 0.85rem;
   color: var(--text-secondary); /* Uses new text-secondary */
+}
+.hospitalservice{
+  margin-top: 2cqi;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
