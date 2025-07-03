@@ -6,7 +6,7 @@ import { allProducts } from '../../ImageData'; // Import the combined image data
 const ImageDetailPage = () => {
   const { category, id } = useParams(); // Get the category and id from the URL
   const navigate = useNavigate(); // Hook for programmatic navigation
-
+ 
   // Find the product based on the id
   // Note: 'category' could be used for more specific filtering if needed,
   // but 'id' should be unique across all products.
