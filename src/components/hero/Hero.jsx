@@ -129,7 +129,7 @@ const Hero = () => {
         <div className="trollypics">
           {/* map over autoclave images  */}
           {acImages.map((image) => (
-            <Link key={image.id} to={`/product/autoclave/${image.id}`}>
+            <Link key={image.id} to={`/products/autoclave/${image.id}`}>
               <img className="trollypic" src={image.src} alt={image.alt} />
             </Link>
           ))}

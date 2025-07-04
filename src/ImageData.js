@@ -135,7 +135,8 @@ export const storageImages = [
   },
 ];
 
-export const acImages = [ {
+export const acImages = [ 
+{
   id: 'ac1',
   src: ac1,
   alt: 'Rectangular Autoclave',
@@ -143,7 +144,7 @@ export const acImages = [ {
 
 },
 {
-   id: 'ac2',
+  id: 'ac2',
   src: ac2,
   alt: " Rectangular Autoclave 2",
   description: "HPVC fully Automatic Autoclave Strelizer",
