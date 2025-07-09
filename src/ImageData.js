@@ -11,6 +11,8 @@ import storage8 from './assets/My Products-1-001/My Products/storage8.jpg';
 import storage9 from './assets/My Products-1-001/My Products/storage9.jpg';
 import storage10 from './assets/My Products-1-001/My Products/storage10.jpg';
 
+// Import afc images
+
 // Import all trolly images
 import trolly1 from './assets/My Products-1-001/My Products/trolly1.jpeg';
 import trolly2 from './assets/My Products-1-001/My Products/trolly2.jpg';
@@ -31,6 +33,11 @@ import basin9 from './assets/My Products-1-001/My Products/basin9.jpeg'
 // import basin10 from './assets/My Products-1-001/My Products/basin10.png'
 import ac1 from './assets/My Products-1-001/My Products/ac1.jpg'
 import ac2 from './assets/My Products-1-001/My Products/ac2.png'
+
+
+
+
+
 export const basinImages = [{
     id: 'Sink-1',
     src: basin1,

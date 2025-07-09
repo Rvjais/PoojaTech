@@ -96,3 +96,15 @@ margin: 5px;
 background-size: cover;
   }
 }
+/* afc */
+.afctopimg{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.scroll {
+  height: 50vh;
+  overflow-y: scroll;
+}
