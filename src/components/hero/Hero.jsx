@@ -22,6 +22,13 @@ import org5 from "../../assets/organisation/lubrizole.png";
 import org6 from "../../assets/organisation/mspl.jpeg";
 import org7 from "../../assets/organisation/Pharma-Industry-scaled.jpg";
 
+// afc scroll pictures
+import scroll1 from '../../assets/afc/scroll1.png'
+import scroll2 from '../../assets/afc/scroll2.png'
+import scroll3 from '../../assets/afc/scroll3.png'
+import scroll4 from '../../assets/afc/scroll4.png'
+import scroll5 from '../../assets/afc/scroll5.png'
+import scroll6 from '../../assets/afc/scroll6.png'
 const Hero = () => {
   return (
     <>
@@ -252,7 +259,15 @@ hoc basis as well.
           </p>
         </div>
         
-
+<div className="imgcontainer">
+          <img className="orgimg" src={scroll1} alt="" />
+          <img className="orgimg" src={scroll2} alt="" />
+          <img className="orgimg" src={scroll3} alt="" />
+          <img className="orgimg" src={scroll4} alt="" />
+          <img className="orgimg" src={scroll5} alt="" />
+          <img className="orgimg" src={scroll6} alt="" />
+        </div>
+      
         <div className="hospitalservice">
           <h1>Hospital Accessories</h1>
         </div>
